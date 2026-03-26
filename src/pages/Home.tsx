@@ -55,7 +55,7 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <section className="bg-white py-20 lg:py-32 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-medium mb-6">
             <ShieldCheck className="w-4 h-4" />
             100% Rights & Royalties Retained
           </div>
@@ -66,7 +66,7 @@ export default function Home() {
             We provide the professional editing, design, and technical support you need to independently publish your book. A transparent, paid service model where you stay in control.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white rounded-lg font-semibold text-lg hover:bg-indigo-700 transition-colors shadow-sm">
+            <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-primary-600 text-white rounded-lg font-semibold text-lg hover:bg-primary-700 transition-colors shadow-sm">
               Get a Free Consultation
             </a>
             <a href="#how-it-works" className="w-full sm:w-auto px-8 py-4 bg-white text-slate-700 border border-slate-300 rounded-lg font-semibold text-lg hover:bg-slate-50 transition-colors">
@@ -82,21 +82,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 text-center">
-              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">You Retain All Rights</h3>
               <p className="text-slate-600">We are a service provider, not a publisher. You own 100% of your intellectual property and publishing rights forever.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 text-center">
-              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Keep 100% of Royalties</h3>
               <p className="text-slate-600">Because you pay for our services upfront, we never take a percentage of your book sales. Every royalty earned is yours.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100 text-center">
-              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-12 h-12 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FileText className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Clear Expectations</h3>
@@ -123,8 +123,8 @@ export default function Home() {
               { icon: CheckCircle2, title: "5. Distribution Setup", desc: "We help you format and upload your files correctly so your book is available where readers shop." },
               { icon: Megaphone, title: "6. Marketing Guidance", desc: "We provide best practices and foundational advice to help you launch your book independently." }
             ].map((step, i) => (
-              <div key={i} className="relative p-6 border border-slate-200 rounded-xl hover:border-indigo-300 transition-colors">
-                <div className="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center mb-4">
+              <div key={i} className="relative p-6 border border-slate-200 rounded-xl hover:border-primary-300 transition-colors">
+                <div className="w-10 h-10 bg-primary-50 text-primary-600 rounded-lg flex items-center justify-center mb-4">
                   <step.icon className="w-5 h-5" />
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">{step.title}</h3>
@@ -180,40 +180,40 @@ export default function Home() {
             <div className="border border-slate-200 rounded-2xl p-8 flex flex-col">
               <h3 className="text-xl font-bold text-slate-900 mb-2">Starter Package</h3>
               <p className="text-slate-500 text-sm mb-6">For authors who have their own cover and editing.</p>
-              <div className="text-3xl font-bold text-slate-900 mb-6">$399</div>
+              <div className="text-3xl font-bold text-slate-900 mb-6">Custom Quote</div>
               <ul className="space-y-3 mb-8 flex-grow">
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Basic Interior Formatting (eBook)</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Publishing Account Setup Guidance</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> File Upload Assistance</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Basic Interior Formatting (eBook)</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Publishing Account Setup Guidance</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> File Upload Assistance</li>
               </ul>
               <a href="#contact" className="w-full block text-center py-3 px-4 bg-slate-100 text-slate-900 font-semibold rounded-lg hover:bg-slate-200 transition-colors">Request Quote</a>
             </div>
 
             {/* Professional */}
-            <div className="border-2 border-indigo-600 rounded-2xl p-8 flex flex-col relative shadow-lg">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Most Popular</div>
+            <div className="border-2 border-primary-600 rounded-2xl p-8 flex flex-col relative shadow-lg">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Most Popular</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Professional Package</h3>
               <p className="text-slate-500 text-sm mb-6">Comprehensive assistance for a polished release.</p>
-              <div className="text-3xl font-bold text-slate-900 mb-6">$799</div>
+              <div className="text-3xl font-bold text-slate-900 mb-6">Custom Quote</div>
               <ul className="space-y-3 mb-8 flex-grow">
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Copy Editing & Proofreading</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Custom Cover Design (eBook & Print)</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Professional Formatting</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Full Publishing Assistance</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Copy Editing & Proofreading</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Custom Cover Design (eBook & Print)</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Professional Formatting</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Full Publishing Assistance</li>
               </ul>
-              <a href="#contact" className="w-full block text-center py-3 px-4 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition-colors">Request Quote</a>
+              <a href="#contact" className="w-full block text-center py-3 px-4 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors">Request Quote</a>
             </div>
 
             {/* Premium */}
             <div className="border border-slate-200 rounded-2xl p-8 flex flex-col">
               <h3 className="text-xl font-bold text-slate-900 mb-2">Premium Package</h3>
               <p className="text-slate-500 text-sm mb-6">Full-service support including marketing guidance.</p>
-              <div className="text-3xl font-bold text-slate-900 mb-6">$1499</div>
+              <div className="text-3xl font-bold text-slate-900 mb-6">Custom Quote</div>
               <ul className="space-y-3 mb-8 flex-grow">
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Developmental & Copy Editing</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Premium Cover Design</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Advanced Formatting</li>
-                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-indigo-600 shrink-0" /> Marketing & Launch Strategy Session</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Developmental & Copy Editing</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Premium Cover Design</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Advanced Formatting</li>
+                <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Marketing & Launch Strategy Session</li>
               </ul>
               <a href="#contact" className="w-full block text-center py-3 px-4 bg-slate-100 text-slate-900 font-semibold rounded-lg hover:bg-slate-200 transition-colors">Request Quote</a>
             </div>
@@ -257,23 +257,23 @@ export default function Home() {
           
           <div className="space-y-6">
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-indigo-600" /> Is this a traditional publisher?</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-primary-600" /> Is this a traditional publisher?</h3>
               <p className="text-slate-600">No. We are a paid service provider assisting independent authors. We do not acquire publishing rights, we do not pay advances, and we do not act as a traditional publisher. You are the publisher of your own work.</p>
             </div>
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-indigo-600" /> Do you guarantee book sales?</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-primary-600" /> Do you guarantee book sales?</h3>
               <p className="text-slate-600">No. We cannot and do not guarantee book sales, bestseller status, or specific financial returns. Book sales depend on market demand, reader preferences, and your ongoing marketing efforts. We provide professional preparation services to give your book a high-quality presentation.</p>
             </div>
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-indigo-600" /> Are there upfront costs?</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-primary-600" /> Are there upfront costs?</h3>
               <p className="text-slate-600">Yes. Because we are a service business, we charge upfront fees for the professional services (editing, design, formatting) we provide. We will provide a clear, custom quote before any work begins.</p>
             </div>
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-indigo-600" /> Where will my book be published?</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-primary-600" /> Where will my book be published?</h3>
               <p className="text-slate-600">We assist you in setting up your own accounts on major self-publishing and distribution platforms (such as Amazon KDP, IngramSpark, etc.). The book is published under your name and your account.</p>
             </div>
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-indigo-600" /> Do I retain rights?</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="w-5 h-5 text-primary-600" /> Do I retain rights?</h3>
               <p className="text-slate-600">Yes, absolutely. You retain 100% of your copyright, publishing rights, and all royalties generated from the sales of your book through your own accounts.</p>
             </div>
           </div>
@@ -298,7 +298,7 @@ export default function Home() {
                 <p className="text-slate-600">We've received your request and will be in touch shortly.</p>
                 <button 
                   onClick={() => setIsSubmitted(false)}
-                  className="mt-6 text-indigo-600 font-medium hover:text-indigo-800"
+                  className="mt-6 text-primary-600 font-medium hover:text-primary-800"
                 >
                   Submit another request
                 </button>
@@ -313,7 +313,7 @@ export default function Home() {
                       id="name" 
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-slate-900 ${errors.name ? 'border-red-500' : 'border-slate-300'}`} 
+                      className={`w-full px-4 py-2 border rounded-md focus:ring-primary-500 focus:border-primary-500 text-slate-900 ${errors.name ? 'border-red-500' : 'border-slate-300'}`} 
                     />
                     {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
                   </div>
@@ -324,7 +324,7 @@ export default function Home() {
                       id="email" 
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-slate-900 ${errors.email ? 'border-red-500' : 'border-slate-300'}`} 
+                      className={`w-full px-4 py-2 border rounded-md focus:ring-primary-500 focus:border-primary-500 text-slate-900 ${errors.email ? 'border-red-500' : 'border-slate-300'}`} 
                     />
                     {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
                   </div>
@@ -338,7 +338,7 @@ export default function Home() {
                       id="phone" 
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-slate-900" 
+                      className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-primary-500 focus:border-primary-500 text-slate-900" 
                     />
                   </div>
                   <div>
@@ -347,7 +347,7 @@ export default function Home() {
                       id="stage" 
                       value={formData.stage}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-slate-900 bg-white ${errors.stage ? 'border-red-500' : 'border-slate-300'}`}
+                      className={`w-full px-4 py-2 border rounded-md focus:ring-primary-500 focus:border-primary-500 text-slate-900 bg-white ${errors.stage ? 'border-red-500' : 'border-slate-300'}`}
                     >
                       <option value="">Select a stage...</option>
                       <option value="writing">Still writing</option>
@@ -366,12 +366,12 @@ export default function Home() {
                     rows={4} 
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 text-slate-900" 
+                    className="w-full px-4 py-2 border border-slate-300 rounded-md focus:ring-primary-500 focus:border-primary-500 text-slate-900" 
                     placeholder="Please describe your book (genre, word count) and the services you are interested in..."
                   ></textarea>
                 </div>
 
-                <button type="submit" className="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-md hover:bg-indigo-700 transition-colors">
+                <button type="submit" className="w-full bg-primary-600 text-white font-bold py-3 px-4 rounded-md hover:bg-primary-700 transition-colors">
                   Request Consultation & Custom Quote
                 </button>
                 

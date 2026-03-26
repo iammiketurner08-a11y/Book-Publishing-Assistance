@@ -6,7 +6,7 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col font-sans text-slate-900 bg-slate-50">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 text-indigo-700 hover:text-indigo-800 transition-colors">
+          <Link to="/" className="flex items-center gap-2 text-primary-700 hover:text-primary-800 transition-colors">
             <BookOpen className="w-6 h-6" />
             <span className="font-bold text-xl tracking-tight">AuthorAssist Publishing</span>
           </Link>
@@ -15,7 +15,7 @@ export default function Layout() {
             <a href="/#services" className="text-sm font-medium text-slate-600 hover:text-slate-900">Services</a>
             <a href="/#pricing" className="text-sm font-medium text-slate-600 hover:text-slate-900">Pricing</a>
             <a href="/#faq" className="text-sm font-medium text-slate-600 hover:text-slate-900">FAQ</a>
-            <a href="/#contact" className="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition-colors">
+            <a href="/#contact" className="bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition-colors">
               Free Consultation
             </a>
           </nav>
