@@ -38,9 +38,9 @@ export default function PrivacyPolicy() {
         <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-4">7. Contact Us</h2>
         <p>If you have questions or comments about this notice, you may email us at contact@authorassistpublishing.com or by post to:</p>
         <p className="mt-2">
-          AuthorAssist Publishing<br />
-          123 Publishing Way, Suite 400<br />
-          New York, NY 10001
+          AKD Publishing<br />
+          7901 4th St N St. Petersburg<br />
+          Florida, 33702
         </p>
       </div>
     </div>
