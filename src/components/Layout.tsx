@@ -61,7 +61,7 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 text-white mb-4">
-              <img src="/public/logo.png" alt="AKD Publishing" className="h-40 w-60 brightness-0 invert" referrerPolicy="no-referrer" />
+              <img src="/logo.png" alt="AKD Publishing" className="h-40 w-60 brightness-0 invert" referrerPolicy="no-referrer" />
             </div>
             <p className="text-sm text-slate-400 max-w-sm mb-6">
               A paid service-based business offering independent publishing assistance to authors. We are not a traditional publisher and do not take royalties.
