@@ -30,10 +30,15 @@ export default function Layout() {
               </button>
               
               {isServicesOpen && (
-                <div className="absolute top-full mt-2 w-56 bg-white border border-slate-200 rounded-md shadow-lg py-2 z-50">
+                <div className="absolute top-full mt-2 w-64 bg-white border border-slate-200 rounded-md shadow-lg py-2 z-50">
                   <Link to="/services/self-publishing" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Self-Publishing</Link>
                   <Link to="/services/editing" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Editing</Link>
                   <Link to="/services/cover-design" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Cover Design</Link>
+                  <Link to="/services/book-formatting" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Book Formatting</Link>
+                  <Link to="/services/book-illustrations" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Book Illustrations</Link>
+                  <Link to="/services/book-video-trailer" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Book Video Trailer</Link>
+                  <Link to="/services/audiobook-creation" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Audiobook Creation</Link>
+                  <Link to="/services/book-writing" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Book Writing</Link>
                   <Link to="/services/author-website" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Author Website</Link>
                   <Link to="/services/marketing" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary-600">Marketing Services</Link>
                 </div>
@@ -76,6 +81,11 @@ export default function Layout() {
               <li><Link to="/services/self-publishing" className="hover:text-white transition-colors">Self-Publishing</Link></li>
               <li><Link to="/services/editing" className="hover:text-white transition-colors">Editing</Link></li>
               <li><Link to="/services/cover-design" className="hover:text-white transition-colors">Cover Design</Link></li>
+              <li><Link to="/services/book-formatting" className="hover:text-white transition-colors">Book Formatting</Link></li>
+              <li><Link to="/services/book-illustrations" className="hover:text-white transition-colors">Book Illustrations</Link></li>
+              <li><Link to="/services/book-video-trailer" className="hover:text-white transition-colors">Book Video Trailer</Link></li>
+              <li><Link to="/services/audiobook-creation" className="hover:text-white transition-colors">Audiobook Creation</Link></li>
+              <li><Link to="/services/book-writing" className="hover:text-white transition-colors">Book Writing</Link></li>
               <li><Link to="/services/author-website" className="hover:text-white transition-colors">Author Website</Link></li>
               <li><Link to="/services/marketing" className="hover:text-white transition-colors">Marketing</Link></li>
             </ul>

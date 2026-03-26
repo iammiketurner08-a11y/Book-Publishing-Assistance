@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { CheckCircle2, FileText, PenTool, LayoutTemplate, UploadCloud, Megaphone, ShieldCheck, HelpCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CheckCircle2, FileText, PenTool, LayoutTemplate, UploadCloud, Megaphone, ShieldCheck, HelpCircle, ChevronDown } from 'lucide-react';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -143,22 +144,51 @@ export default function Home() {
             <p className="text-lg text-slate-600">Choose individual services or comprehensive packages tailored to your manuscript's needs.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
               <h3 className="text-xl font-bold text-slate-900 mb-3">Editing & Proofreading</h3>
-              <p className="text-slate-600 mb-4">From developmental editing to final proofreading, we help polish your manuscript to professional standards. We correct grammar, improve flow, and ensure consistency.</p>
+              <p className="text-slate-600 mb-6 flex-grow">From developmental editing to final proofreading, we help polish your manuscript to professional standards. We correct grammar, improve flow, and ensure consistency.</p>
+              <Link to="/services/editing" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
               <h3 className="text-xl font-bold text-slate-900 mb-3">Custom Cover Design</h3>
-              <p className="text-slate-600 mb-4">A professional cover is essential. Our designers create high-quality eBook and full-wrap print covers that align with your genre's expectations.</p>
+              <p className="text-slate-600 mb-6 flex-grow">A professional cover is essential. Our designers create high-quality eBook and full-wrap print covers that align with your genre's expectations.</p>
+              <Link to="/services/cover-design" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
               <h3 className="text-xl font-bold text-slate-900 mb-3">Interior Formatting</h3>
-              <p className="text-slate-600 mb-4">We format your manuscript into clean, readable files required for print-on-demand (PDF) and digital e-readers (EPUB).</p>
+              <p className="text-slate-600 mb-6 flex-grow">We format your manuscript into clean, readable files required for print-on-demand (PDF) and digital e-readers (EPUB).</p>
+              <Link to="/services/book-formatting" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
             </div>
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Platform Setup Assistance</h3>
-              <p className="text-slate-600 mb-4">We guide you step-by-step through creating your own author accounts on major platforms, ensuring you retain full control and direct payments.</p>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Book Video Trailers</h3>
+              <p className="text-slate-600 mb-6 flex-grow">Bring your story to life with a cinematic book trailer. Perfect for social media and retail platforms to capture reader interest.</p>
+              <Link to="/services/book-video-trailer" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Book Illustrations</h3>
+              <p className="text-slate-600 mb-6 flex-grow">Custom illustrations for children's books, fantasy maps, or technical diagrams. Our artists bring your vision to life.</p>
+              <Link to="/services/book-illustrations" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Audiobook Creation</h3>
+              <p className="text-slate-600 mb-6 flex-grow">Reach listeners with professional narration and ACX-compliant mastering for Audible and iTunes.</p>
+              <Link to="/services/audiobook-creation" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Book Writing & Ghostwriting</h3>
+              <p className="text-slate-600 mb-6 flex-grow">Professional writers help you turn your concepts, memories, or research into a compelling manuscript.</p>
+              <Link to="/services/book-writing" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Author Website Design</h3>
+              <p className="text-slate-600 mb-6 flex-grow">Establish your online presence with a professional author website to showcase your books and connect with readers.</p>
+              <Link to="/services/author-website" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200 flex flex-col">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Marketing Guidance</h3>
+              <p className="text-slate-600 mb-6 flex-grow">We provide strategic marketing guidance and tools to help you reach your target audience and build a readership.</p>
+              <Link to="/services/marketing" className="text-primary-600 font-semibold hover:text-primary-700 inline-flex items-center gap-1">Learn More <ChevronDown className="w-4 h-4 -rotate-90" /></Link>
             </div>
           </div>
         </div>
