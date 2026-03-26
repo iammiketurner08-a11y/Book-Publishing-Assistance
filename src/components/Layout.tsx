@@ -15,7 +15,7 @@ export default function Layout() {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-primary-700 hover:text-primary-800 transition-colors">
-            <img src="/public/logo.png" alt="AKD Publishing" className="h-40 w-50" referrerPolicy="no-referrer" />
+            <img src="/public/logo.png" alt="AKD Publishing" className="h-50 w-60" referrerPolicy="no-referrer" />
           </Link>
           <nav className="hidden md:flex items-center gap-8">
             <a href="/#how-it-works" className="text-sm font-medium text-slate-600 hover:text-slate-900">How It Works</a>
@@ -61,7 +61,7 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 text-white mb-4">
-              <img src="/public/logo.png" alt="AKD Publishing" className="h-30 w-50 brightness-0 invert" referrerPolicy="no-referrer" />
+              <img src="/public/logo.png" alt="AKD Publishing" className="h-40 w-60 brightness-0 invert" referrerPolicy="no-referrer" />
             </div>
             <p className="text-sm text-slate-400 max-w-sm mb-6">
               A paid service-based business offering independent publishing assistance to authors. We are not a traditional publisher and do not take royalties.
