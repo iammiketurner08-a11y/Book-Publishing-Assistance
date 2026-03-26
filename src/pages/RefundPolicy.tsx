@@ -5,7 +5,7 @@ export default function RefundPolicy() {
       <div className="prose prose-slate max-w-none text-slate-600 space-y-6">
         <p><strong>Last Updated:</strong> {new Date().toLocaleDateString()}</p>
         
-        <p>At AuthorAssist Publishing, we strive to provide high-quality professional services to independent authors. Because our work involves dedicated time, labor, and custom deliverables, our refund policy is structured to be fair to both our clients and our team.</p>
+        <p>At AKD Publishing, we strive to provide high-quality professional services to independent authors. Because our work involves dedicated time, labor, and custom deliverables, our refund policy is structured to be fair to both our clients and our team.</p>
 
         <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-4">1. Service Cancellation Before Work Begins</h2>
         <p>If you choose to cancel your service agreement <strong>before any work has commenced</strong> on your project, you are entitled to a full refund of any deposits or upfront fees paid, less a 5% administrative processing fee to cover transaction costs.</p>
@@ -25,7 +25,7 @@ export default function RefundPolicy() {
         <p><strong>CRITICAL:</strong> We are a service provider assisting with the preparation of your book. We do not guarantee book sales, reviews, or market success. Therefore, <strong>we absolutely do not issue refunds based on poor book sales, lack of commercial success, or negative reader reviews.</strong></p>
 
         <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-4">5. How to Request a Refund or Cancellation</h2>
-        <p>To request a cancellation and applicable refund, please contact your assigned project manager directly or email us at <strong>contact@authorassistpublishing.com</strong> with your project details and reason for cancellation. Refund requests are processed within 7-10 business days.</p>
+        <p>To request a cancellation and applicable refund, please contact your assigned project manager directly or email us at <strong>contact@akdpublishing.com</strong> with your project details and reason for cancellation. Refund requests are processed within 7-10 business days.</p>
 
         <h2 className="text-xl font-semibold text-slate-900 mt-8 mb-4">6. Revisions vs. Refunds</h2>
         <p>If you are unsatisfied with a deliverable (such as a cover design concept), please refer to the revision terms in your service agreement. We are committed to working with you through the agreed-upon revision rounds to achieve a result you are happy with, rather than issuing immediate refunds for subjective design or editorial preferences.</p>
