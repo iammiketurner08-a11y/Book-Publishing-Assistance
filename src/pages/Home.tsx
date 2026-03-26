@@ -180,7 +180,7 @@ export default function Home() {
             <div className="border border-slate-200 rounded-2xl p-8 flex flex-col">
               <h3 className="text-xl font-bold text-slate-900 mb-2">Starter Package</h3>
               <p className="text-slate-500 text-sm mb-6">For authors who have their own cover and editing.</p>
-              <div className="text-3xl font-bold text-slate-900 mb-6">Custom Quote</div>
+              <div className="text-3xl font-bold text-slate-900 mb-6">$399</div>
               <ul className="space-y-3 mb-8 flex-grow">
                 <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Basic Interior Formatting (eBook)</li>
                 <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Publishing Account Setup Guidance</li>
@@ -194,7 +194,7 @@ export default function Home() {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Most Popular</div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Professional Package</h3>
               <p className="text-slate-500 text-sm mb-6">Comprehensive assistance for a polished release.</p>
-              <div className="text-3xl font-bold text-slate-900 mb-6">Custom Quote</div>
+              <div className="text-3xl font-bold text-slate-900 mb-6">$799</div>
               <ul className="space-y-3 mb-8 flex-grow">
                 <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Copy Editing & Proofreading</li>
                 <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Custom Cover Design (eBook & Print)</li>
@@ -208,7 +208,7 @@ export default function Home() {
             <div className="border border-slate-200 rounded-2xl p-8 flex flex-col">
               <h3 className="text-xl font-bold text-slate-900 mb-2">Premium Package</h3>
               <p className="text-slate-500 text-sm mb-6">Full-service support including marketing guidance.</p>
-              <div className="text-3xl font-bold text-slate-900 mb-6">Custom Quote</div>
+              <div className="text-3xl font-bold text-slate-900 mb-6">$1499</div>
               <ul className="space-y-3 mb-8 flex-grow">
                 <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Developmental & Copy Editing</li>
                 <li className="flex items-start gap-2 text-slate-600"><CheckCircle2 className="w-5 h-5 text-primary-600 shrink-0" /> Premium Cover Design</li>
