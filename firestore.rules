@@ -1,0 +1,72 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: submissions
+    // Document ID: auto-generated
+    // Fields:
+    //   - name: string (required) - Full name of the author
+    //   - email: string (required, email format) - Email address
+    //   - phone: string (optional) - Phone number
+    //   - stage: string (required, enum) - Book stage
+    //   - message: string (required) - Message content
+    //   - createdAt: timestamp (required) - Submission timestamp
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin' ||
+          (request.auth.token.email == "iam.miketurner08@gmail.com" && request.auth.token.email_verified == true));
+    }
+
+    function isValidEmail(email) {
+      return email is string &&
+        email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    function isValidSubmission(data) {
+      let requiredFields = ['name', 'email', 'stage', 'message', 'createdAt'];
+      let allowedFields = ['name', 'email', 'phone', 'stage', 'message', 'createdAt'];
+      let validStages = ['writing', 'finished_draft', 'edited', 'ready'];
+
+      return data.keys().hasAll(requiredFields) &&
+             data.keys().hasOnly(allowedFields) &&
+             data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
+             isValidEmail(data.email) &&
+             data.stage in validStages &&
+             data.message is string && data.message.size() > 0 && data.message.size() < 5000 &&
+             data.createdAt is timestamp &&
+             (!('phone' in data) || (data.phone is string && data.phone.size() < 20));
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /submissions/{submissionId} {
+      // Allow anyone to submit the form
+      allow create: if isValidSubmission(request.resource.data);
+      
+      // Only admins can read or manage submissions
+      allow read, list, update, delete: if isAdmin();
+    }
+
+    match /users/{userId} {
+      allow read: if isAuthenticated() && request.auth.uid == userId;
+      allow write: if isAdmin();
+    }
+  }
+}

@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, FileText, PenTool, LayoutTemplate, UploadCloud, Megaphone, ShieldCheck, HelpCircle, ChevronDown } from 'lucide-react';
+import { db, handleFirestoreError, OperationType } from '../firebase';
+import { collection, addDoc, serverTimestamp, getDocFromServer, doc } from 'firebase/firestore';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -12,6 +14,21 @@ export default function Home() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    async function testConnection() {
+      try {
+        await getDocFromServer(doc(db, 'test', 'connection'));
+      } catch (error) {
+        if (error instanceof Error && error.message.includes('the client is offline')) {
+          console.error("Please check your Firebase configuration. ");
+        }
+        // Skip logging for other errors, as this is simply a connection test.
+      }
+    }
+    testConnection();
+  }, []);
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
@@ -30,15 +47,26 @@ export default function Home() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      setIsSubmitted(true);
-      // Here you would typically send the data to your backend
-      console.log('Form submitted:', formData);
-      // Reset form after successful submission
-      setFormData({ name: '', email: '', phone: '', stage: '', message: '' });
-      setTimeout(() => setIsSubmitted(false), 5000);
+      setIsSubmitting(true);
+      try {
+        const path = 'submissions';
+        await addDoc(collection(db, path), {
+          ...formData,
+          createdAt: serverTimestamp()
+        });
+        
+        setIsSubmitted(true);
+        // Reset form after successful submission
+        setFormData({ name: '', email: '', phone: '', stage: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } catch (error) {
+        handleFirestoreError(error, OperationType.CREATE, 'submissions');
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -401,8 +429,12 @@ export default function Home() {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="w-full bg-primary-600 text-white font-bold py-3 px-4 rounded-md hover:bg-primary-700 transition-colors">
-                  Request Consultation & Custom Quote
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="w-full bg-primary-600 text-white font-bold py-3 px-4 rounded-md hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? 'Submitting...' : 'Request Consultation & Custom Quote'}
                 </button>
                 
                 <p className="text-xs text-slate-500 text-center mt-4">
