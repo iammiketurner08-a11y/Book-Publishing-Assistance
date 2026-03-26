@@ -1,0 +1,1 @@
+Logo placeholder. Please replace this file with your actual logo.png file in the public directory.
